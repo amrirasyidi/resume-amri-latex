@@ -1,0 +1,132 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% change color hyperlinks
+\hypersetup{%
+    colorlinks=true,% hyperlinks will be black
+    urlcolor=[rgb]{0.04,0,0.5},
+    urlbordercolor=[rgb]{0.7,0.7,0.7},% hyperlink borders will be gray
+    pdfborderstyle={/S/U/W 0.5}% border style will be underline of width 1pt
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeItemPaper}[1]{
+    \item\small{
+            {#1}
+    }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & #2                 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+    %----------HEADING-----------------
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large Amri Rasyidi} 
+    & Email: \href{mailto:amri.geodesy@gmail.com}{amri.geodesy@gmail.com} \\
+    
+    \href{https://www.linkedin.com/in/amri-rasyidi/}{\faLinkedin}
+    \href{https://github.com/amrirasyidi}{\faGithub}
+    & \today \\
+    \end{tabular*}
+
+    %--------SKILLS------------
+    \section{Skill and Coursework}
+    \resumeSubHeadingListStart
+    \item{ \textbf{Technical}{: Python (VSCode, PyCharm), SQL (BigQuery), ArcGIS, Tableau, Git, \LaTeX.} }
+    \item{ \textbf{Relevant coursework}{: data science, predictive modelling, clustering, classification, data analytic, spatial analysis.} }
+    \item{ \textbf{Languages}{: Bahasa Indonesia (Native), English (CEFR Level C1/IELTS 7.5).} }
+    \resumeSubHeadingListEnd
+
+    %-----------EXPERIENCE-----------------
+    \section{Work and Research Experience}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Berkeley Education Alliance for Research in Singapore (BEARS)}{Singapore, SG}
+    {Postdoctoral Scholar - SinBerBEST 2}{06/2019 – present}
+    \resumeItemListStart
+    \resumeItem{Open source software}{Maintainer and main developer of the CBE Thermal Comfort Tool v2.0 -- web tool for thermal comfort calculations and visualizations; pythermalcomfort -- thermal comfort Python package; CBE Clima Tool -- web tool to analyze climate data; Cozie for iOS and Fitbit -- application for IEQ and physiological data collection.}
+    \resumeItem{Research}{Conducted a longitudinal thermal comfort study and developed personalized thermal comfort models using wearable and IoT devices. Performed data analysis, and carried out test experiments involving human subjects. Determined under which environmental conditions electric fans can safely cool people.}
+    \resumeItem{Industrial research projects}{Collaborated in the construction and commissioning of the BCA ZEB+ Building, the first retrofitted Zero Energy Building in Singapore for the Singaporean Building and Construction Authority (BCA). Helped with the development of the BCA Green Mark compliance path.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
+
+% \documentclass{moderncv}
+
+% \moderncvtheme[blue]{classic}
+
+% \firstname{Amri}
+% \lastname{Rasyidi}
+% \title{Curriculum Vitae}
+
+% \begin{document}
+% \section{Personal Detail}
+% \cvitem{heading}{text}
+% \cvitem{heading}{text}
+% \cvitem{heading}{text}
+% \end{document}
