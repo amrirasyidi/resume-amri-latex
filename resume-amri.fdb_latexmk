@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1682661218 "d:/0_amri_local/99_personal/amri-resume-latex/resume-amri.tex" "resume-amri.pdf" "resume-amri" 1682661219 0
+["pdflatex"] 1682662862 "d:/0_amri_local/99_personal/amri-resume-latex/resume-amri.tex" "resume-amri.pdf" "resume-amri" 1682662863 0
   "C:/Users/arasyidi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1682656053 82375 47b8b2ff476b5d8349e9ab47c4caa869 ""
   "C:/Users/arasyidi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1682656260 12668 c7a62243f299250d5970d642894a9024 ""
   "C:/Users/arasyidi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1682649289 23180376 dc6ec62d3da829d82df723d2fa5fd418 ""
@@ -86,10 +86,10 @@
   "C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1667242266 7392 f19cdc68ae9f1190dbd54eee6d29fb7c ""
   "C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "d:/0_amri_local/99_personal/amri-resume-latex/resume-amri.tex" 1682661217 4688 74af7ee313da23e234ad000c19b2b943 ""
-  "resume-amri.aux" 1682661219 796 66438121ce56a0295da90e6c27dd4c68 "pdflatex"
-  "resume-amri.out" 1682661219 341 a9340b653657c9a28ba6ec44aa58209e "pdflatex"
-  "resume-amri.tex" 1682661217 4688 74af7ee313da23e234ad000c19b2b943 ""
+  "d:/0_amri_local/99_personal/amri-resume-latex/resume-amri.tex" 1682662861 4695 57afceaf261e70aa15cfcd6ff14488fe ""
+  "resume-amri.aux" 1682662863 815 0f894fdfbc22158f567f21339ba6e02a "pdflatex"
+  "resume-amri.out" 1682662863 341 a9340b653657c9a28ba6ec44aa58209e "pdflatex"
+  "resume-amri.tex" 1682662861 4695 57afceaf261e70aa15cfcd6ff14488fe ""
   (generated)
   "resume-amri.aux"
   "resume-amri.log"
