@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.28)  28 APR 2023 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.4.28)  28 APR 2023 13:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -273,11 +273,6 @@ LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inpu
  (C:\Users\arasyidi\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 111.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 111.
-
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 4.08003pt, for example:
@@ -287,20 +282,20 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 {C:/Users/arasyidi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fontawesometwo.enc}] (resume-amri.aux)
 Package rerunfilecheck Info: File `resume-amri.out' has not changed.
-(rerunfilecheck)             Checksum: A9340B653657C9A28BA6EC44AA58209E;341.
+(rerunfilecheck)             Checksum: 7583E1AA218832BEEC4150980728999B;149.
  ) 
 Here is how much of TeX's memory you used:
- 11206 strings out of 476331
- 175356 string characters out of 5786349
- 1861660 words of memory out of 5000000
- 31516 multiletter control sequences out of 15000+600000
- 518536 words of font info for 56 fonts, out of 8000000 for 9000
+ 11193 strings out of 476331
+ 175207 string characters out of 5786349
+ 1855660 words of memory out of 5000000
+ 31507 multiletter control sequences out of 15000+600000
+ 517218 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,449b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\arasyidi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume-amri.pdf (1 page, 111076 bytes).
+ 75i,11n,76p,423b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\arasyidi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/arasyidi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on resume-amri.pdf (1 page, 78751 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 55 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
