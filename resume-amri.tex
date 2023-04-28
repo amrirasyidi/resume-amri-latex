@@ -12,6 +12,13 @@
 \usepackage{fontawesome}
 \usepackage{xcolor}
 
+\usepackage{tikz}
+\usepackage{lipsum}
+
+% Define custom colors
+\definecolor{darkblue}{HTML}{16417C}
+\definecolor{lightblue}{HTML}{46A9F7}
+
 % change color hyperlinks
 \hypersetup{%
     colorlinks=true,% hyperlinks will be black
@@ -40,12 +47,15 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{
-    \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}
+{\centering\bfseries\color{darkblue}\fontsize{14}{18}\selectfont}
+{}{0em}{}
+[\color{darkblue}\vspace{-12pt}\titlerule\vspace{-12pt}]
 
 %-------------------------
 % Custom commands
+\renewcommand{\titlerule}{\rule{\textwidth}{2pt}}
+
 \newcommand{\resumeItem}[2]{
     \item\small{
         \textbf{#1}{: #2 \vspace{-2pt}}
@@ -58,12 +68,12 @@
     }
 }
 
-
 \newcommand{\resumeSubheading}[4]{
-    \vspace{-1pt}\item
+    \vspace{-1pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \textbf{#1}       & #2                 \\
+        \color{lightblue}\textbf{#1} & #2 \\
         \textit{\small#3} & \textit{\small #4} \\
+        \textnormal{}\vspace{-5pt}
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -73,60 +83,196 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0em}\vspace{-1pt}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-
     %----------HEADING-----------------
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\Large Amri Rasyidi} 
-    & \href{mailto:amri.geodesy@gmail.com}{amri.geodesy@gmail.com} \\
+    \begin{tikzpicture}[remember picture,overlay]
+
+        \coordinate [below=80pt] (midpoint) at (current page.north);
+        
+        \node [
+        name = colourbar,
+        anchor = south,
+        fill = lightblue!60,
+        text = white,
+        minimum width=\paperwidth,
+        minimum height=80pt] at (midpoint) {
+            \begin{tabular}{c}
+                \\
+                \\
+                \textbf{\Large Amri Rasyidi} \\
+                \href{mailto:amri.geodesy@gmail.com}{amri.geodesy@gmail.com} \\
+                \href{https://www.linkedin.com/in/amri-rasyidi/}{\fontsize{14}{20}\faLinkedin}
+                \href{https://github.com/amrirasyidi}{\fontsize{14}{20}\faGithub}
+                \href{https://longlivecomrade9.wordpress.com/}{\fontsize{14}{20}\faWordpress}
+            \end{tabular}
+        };
+    \end{tikzpicture}
     
-    \href{https://www.linkedin.com/in/amri-rasyidi/}{\faLinkedin}
-    \href{https://github.com/amrirasyidi}{\faGithub}
-    & {} \\
-    \end{tabular*}
-
+    \vspace{20pt}
     %--------SKILLS------------
-    \section{\textcolor{blue}{Skill and Coursework}}
-    \resumeSubHeadingListStart
-    \item{ \textbf{Technical}{: Python (VSCode, PyCharm), SQL (BigQuery), ArcGIS, Tableau, Git, \LaTeX.} }
-    \item{ \textbf{Relevant coursework}{: data science, predictive modelling, clustering, classification, data analytic, spatial analysis.} }
-    \item{ \textbf{Languages}{: Bahasa Indonesia (Native), English (CEFR Level C1/IELTS 7.5).} }
-    \resumeSubHeadingListEnd
-
-    %-----------EXPERIENCE-----------------
-    % \section{Work Experience}
+    \section{Skills and Courseworks}
+    \resumeItemListStart
+    \resumeItem{Technical}{
+        Python (VSCode, PyCharm), 
+        SQL (BigQuery), 
+        ArcGIS, 
+        Tableau, 
+        Git, 
+        \LaTeX.
+    }
+    \resumeItem{Relevant coursework}{
+        data science, 
+        predictive modelling, 
+        clustering, 
+        classification, 
+        data analytic, 
+        spatial analysis
+    } 
+    \resumeItem{Languages}{
+        Bahasa Indonesia (Native), 
+        English (CEFR Level C1/IELTS 7.5).
+    }
+    \resumeItemListEnd
+    
+    %-----------PRO EXPERIENCE-----------------
+    \vspace{-5pt}
+    \section{Professional Experiences}
     % \resumeSubHeadingListStart
 
-    % \resumeSubheading
-    % {Berkeley Education Alliance for Research in Singapore (BEARS)}{Singapore, SG}
-    % {Postdoctoral Scholar - SinBerBEST 2}{06/2019 – present}
-    % \resumeItemListStart
-    % \resumeItem{Open source software}{Maintainer and main developer of the CBE Thermal Comfort Tool v2.0 -- web tool for thermal comfort calculations and visualizations; pythermalcomfort -- thermal comfort Python package; CBE Clima Tool -- web tool to analyze climate data; Cozie for iOS and Fitbit -- application for IEQ and physiological data collection.}
-    % \resumeItem{Research}{Conducted a longitudinal thermal comfort study and developed personalized thermal comfort models using wearable and IoT devices. Performed data analysis, and carried out test experiments involving human subjects. Determined under which environmental conditions electric fans can safely cool people.}
-    % \resumeItem{Industrial research projects}{Collaborated in the construction and commissioning of the BCA ZEB+ Building, the first retrofitted Zero Energy Building in Singapore for the Singaporean Building and Construction Authority (BCA). Helped with the development of the BCA Green Mark compliance path.}
-    % \resumeItemListEnd
+    \resumeSubheading
+    {ESRI Indonesia (GIS Software \& Services)}{Jakarta, Indonesia}
+    {Data Scientist}{January 2022 – present}
+    {Esri Indonesia provides GIS solutions and services to various industries in Indonesia, 
+    including government, natural resources, utilities, transportation, and telecommunications.}
+    \vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{Banking Industry Solutioning}{Developed 2 advanced analytics solutions. Helped the bank to integrate internal and external data...}
+    \resumeItemListEnd
+    
+    \vspace{5pt}
+    \resumeSubheading
+    {Zenius Education (Ed-Tech)}
+    {Jakarta, Indonesia}
+    {Business Intelligence Analyst}
+    {December 2021 - July 2022}
+    {Zenius is a well-know ed-tech company pioneer focus on increasing thinking capacity and building foundational thinking for junior
+    and senior high school student to help them excel in their school}
+    \vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{Workflow management}{structured a system to increase workflow transparency and accountability. 
+    Increase the ability to manage and monitor ad hoc and internal tasks/projects from 0 to 16+ tasks/projects weekly.}
+    \resumeItem{Dashboard}{created 3 google data studio dashboards for 3 different teams with 
+    over 50 metrics ranged from operational to C-level granularity.}
+    \resumeItemListEnd
+
+    \vspace{5pt}
+    \resumeSubheading
+    {Gojek (Q-commerce and Financial Services)}
+    {Jakarta, Indonesia}
+    {Junior Risk Data Analyst, Risk Data Analyst}
+    {April 2019 - December 2021}
+    {GoTo’s ecosystem comprises of on-demand transport, e-commerce, food and grocery delivery, logistics and fulfillment, and financial
+    services through the Gojek, Tokopedia and GoTo Financial platforms.}
+    \vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{Fraud analysis}{analyzed up to 1000 GPS movements daily to determine 
+    fraudulent patterns for constructing fraud rules of fourwheels and two-wheels platforms.}
+    \resumeItem{Rule deployment}{prevented new modus operandi from exploiting a GPS related-loophole in the production apps. 
+    Fraudsters abused this loophole for financial gain and reputation hijack. Reduced the number of
+    case significantly from 400 to 10 cases daily, with false positive rate under 1\%.}
+    \resumeItem{Rule enhancement}{analyzed the hypothesis made by my team 
+    and enhanced the rule by applying a more sophisticated method of fraud identification (relational graph logic) 
+    to detect the convoluted device connection/relation. Increased the detection rate by 50\%.}
+    \resumeItemListEnd
 
     % \resumeSubHeadingListEnd
 
+    %-----------PROJECT-----------------
+    \vspace{-5pt}
+    \section{Projects}
+
+    \resumeItemListStart
+    \resumeItem{Book Recommendation System}{built a local web app to give user a book recommendation based on collaborative filtering logic.
+    Also created a simple search engine to ensure users are asking the correct book to be recommended. 
+    \href{https://github.com/amrirasyidi/book_recommendation}{[\textcolor{blue}{repository}]}}
+    \resumeItem{MIT IDSS Course - Hackaton}{the objective of this problem is to understand which parameters play an important role in swaying
+    passenger feedback towards a positive scale. Created logistic regression, XGBoost, and Deep learning model resulting in accuracy
+    above 92\%. 
+    \href{https://github.com/amrirasyidi/mit_idss_hackaton}{[\textcolor{blue}{repository}]}}
+    \resumeItem{JDVF - Tableau Dashboard}{this dashboard provides the government, NGO, and researcher among many other stakeholders a start
+    to make data-driven decisions and policy-making regarding flood mitigation in West Java. 
+    \href{https://public.tableau.com/app/profile/faisal.putra/viz/Book1_16671939458310/DashboardFINAL}{[\textcolor{blue}{Tableau Public}]}}
+    \resumeItemListEnd
+    
+    %-----------Educations-----------------
+    \vspace{-5pt}
+    \section{Educations}
+
+    \resumeSubheading
+    {MIT IDSS: Data Science and Machine Learning}
+    {Remote}
+    {An online professional course taught by the MIT faculty}
+    {August - November 2022}
+    {Topic covered: statistics, unsupervised and supervised learning, hypothesis testing, 
+    deep learning, recommendation system, network and graphical model, and predictive analysis.}
+    
+    \vspace{5pt}
+    \resumeSubheading
+    {Institut Teknologi Bandung}
+    {Bandung, Indonesia}
+    {B.Sc in Geodesy and Geomatics Engineering, GPA 3.21/4.00.}
+    {July 2014 - October 2018}
+    {Topic covered includes: calculus, statistics, GIS, satellite geodesy, 
+    remote sensing, spatial database, cartography.}
+
+    %-----------Leadership/Voluntary Experiences-----------------
+    \vspace{-5pt}
+    \section{Leadership/Voluntary Experiences}
+
+    \resumeSubheading
+    {Yayasan Anak Bangsa Bisa (YABB)}
+    {Jakarta, Indonesia}
+    {Mentor/Instructor - Generasi Gigih}
+    {July - December 2021}
+    {Yayasan Anak Bangsa Bisa (YABB) is a non-profit organization founded by Gojek, a catalyst that enables resilient change makers to
+    solve pressing challenges and build sustainable communities. Generasi Gigih programme focuses on generating tech-talent by
+    conducting intensive bootcamp to prepare fresh graduates for the tech industry.}
+    \vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{Designed and created}{data analysis lecture materials (Python and SQL for data analysis).}
+    \resumeItem{Gave Lecture}{on data analysis.}
+    \resumeItem{Mentorship}{guide and mentor to the participants during their internship. Ensured the participants gained the most during their
+    internship while maintaining the focus of the projects they were working.}
+    \resumeItemListEnd
+
+    \vspace{5pt}
+    \resumeSubheading
+    {Ikatan Mahasiswa Geodesi ITB (IMG-ITB)}
+    {Bandung, Indonesia}
+    {Chairman of IMG-ITB (Executive Student Council)}
+    {August 2017 – March 2018}
+    {Ikatan Mahasiswa Geodesi ITB (IMG-ITB) is a profession-based student association.}
+    \vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{Visioning}{designed a blueprint as the north star metrics of the association. Mainly focus on character and mindset development in a
+    professional manner and making concrete social impact.}
+    \resumeItem{Executive function}{managed a council consisted of 5 ministries and 15 departments to maintain and develop the student association.}
+    \resumeItemListEnd
+
+    %-----------PROJECT-----------------
+    \vspace{-5pt}
+    \section{Projects}
+
+    \resumeItemListStart
+    \resumeItem{Topic}{education, environment, game industry, movie, leisure.}
+    \resumeItem{Book}{history, sociology, biography, religion, psychology.}
+    \resumeItem{Activity}{SCUBA diving, hiking, gym, PC game, writing.}
+    \resumeItemListEnd
+
 \end{document}
-
-% \documentclass{moderncv}
-
-% \moderncvtheme[blue]{classic}
-
-% \firstname{Amri}
-% \lastname{Rasyidi}
-% \title{Curriculum Vitae}
-
-% \begin{document}
-% \section{Personal Detail}
-% \cvitem{heading}{text}
-% \cvitem{heading}{text}
-% \cvitem{heading}{text}
-% \end{document}
