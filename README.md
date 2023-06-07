@@ -4,9 +4,9 @@ My professional resume created using LaTeX inside VSCode
 Below is the <b>preview</b>.<br>
 Go to [resume-amri.pdf][1] for the complete pdf file
 
-<div style="align:center">
+<p align="center">
     <img src="src\images\resume-preview.png" alt="resume preview">
-</div>
+</p>
 
 # How to use
 
@@ -14,9 +14,9 @@ Go to [resume-amri.pdf][1] for the complete pdf file
     1. [Windows](https://youtu.be/4lyHIQl4VM8)
     1. [Mac](https://youtu.be/CmagZthwhaY)
 1. Open the `.tex` file on VSCode
-    <div style="align:center">
+    <p align="center">
         <img src="src\images\vscode_shortcut.png" alt="resume preview">
-    </div>
+    </p>
 1. Build/compile the latex file to see it in the `.pdf` format. Click the "Play" button on top right of your VSCode window. **(A)**
 1. To see the complied `.pdf`, click the "View LaTeX PDF File" button on top right of your VSCode window. **(B)**
 
