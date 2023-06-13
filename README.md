@@ -24,4 +24,9 @@ Go to [resume-amri.pdf][1] for the complete pdf file
 
 You can also open the compiled `.pdf` in Microsoft Word (2013 or above) and convert it into `.docx` file then edit it as you like.
 
+# Disclaimer
+
+Many parts of my resume are copy pasted from the internet. Unfortunately I didn't take note of the sources.
+If you think I use any sources from you, just let me know, I'll add the citation.
+
 [1]: https://github.com/amrirasyidi/resume-amri-latex/blob/master/resume-amri.pdf
