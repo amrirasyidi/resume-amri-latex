@@ -9,11 +9,12 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{xcolor}
 
 \usepackage{tikz}
 \usepackage{lipsum}
+\usepackage{multicol}
 
 % Define custom colors
 \definecolor{darkblue}{HTML}{16417C}
@@ -107,7 +108,7 @@
                 \\
                 \textbf{\Large Amri Rasyidi} \\
                 \href{mailto:amri.geodesy@gmail.com}{amri.geodesy@gmail.com} \\ 
-                \href{https://www.linkedin.com/in/amri-rasyidi/}{\fontsize{14}{20}\faLinkedinSquare ~Amri Rasyidi}
+                \href{https://www.linkedin.com/in/amri-rasyidi/}{\fontsize{14}{20}\faLinkedin ~Amri Rasyidi}
                 \href{https://github.com/amrirasyidi}{\fontsize{14}{20}\faGithub ~amrirasyidi}
                 \href{https://arasyidi.netlify.app/}{\fontsize{14}{20}\faGlobe ~arasyidi.netlify.app}
             \end{tabular}
@@ -115,45 +116,107 @@
     \end{tikzpicture}
     
     \vspace{20pt}
+    \section{Summary}
+    {Bachelor of Science in Geodesy and Geomatics Engineering with a strong passion for 
+    spatial science and data science. Over 5 years of experience in the data industry, 
+    including 2 years dedicated to data science. Shows Commitment to continuous learning and 
+    growth, by maintain a blog documenting my data science journey and insights into 
+    life. Possess leadership experience and actively volunteer to teach data science to 
+    others, demonstrating a commitment to knowledge sharing and community engagement.}
+    \vspace{-5pt}
     %--------SKILLS------------
-    \section{Skills and Courseworks}
+    \section{Skills and Stack}
+    % \begin{multicols}{3} % Set the number of columns to 3
+    %     \resumeItemListStart
+    %         \resumeItemPaper{Machine Learning, Deep Learning, MLOps}
+    %         \resumeItemPaper{PyTorch}
+    %         \resumeItemPaper{scikit-learn}
+    %         \resumeItemPaper{XGBoost}
+    %         \resumeItemPaper{statsmodel}
+    %         \resumeItemPaper{MLFlow}
+    %         \resumeItemPaper{Optuna}
+    %         \resumeItemPaper{Data Science}
+    %         \resumeItemPaper{VSCode}
+    %         \resumeItemPaper{GeoPandas}
+    %         \resumeItemPaper{Apache-Sedona}
+    %         \resumeItemPaper{polars}
+    %         \resumeItemPaper{ydata-profiling}
+    %         \resumeItemPaper{SQL}
+    %     \resumeItemListEnd
+    % \end{multicols}
+    % \vspace{-15pt}
     \resumeItemListStart
-    \resumeItem{Technical:}{
-        Python (VSCode, PyCharm), 
-        SQL (BigQuery), 
-        ArcGIS, 
-        Tableau, 
-        Git, 
-        \LaTeX.
+    \resumeItem{Machine Learning, Deep Learning, MLOps:}{ % (optional) [soon]
+        PyTorch, (scikit-learn), XGBoost, (statsmodel), MLFlow, Optuna, [TensorFlow, Darts, DVC]
+    }
+    \resumeItem{Data Science:}{
+        VSCode, GeoPandas, Apache-Sedona, polars, ydata-profiling, SQL, Neo4j, Cypher, ArcGIS Pro
+    }
+    \resumeItem{Deployment:}{
+        Git, GitHub, DagsHub, [Gradio, HuggingFace, Azure, AWS]
     }
     \resumeItem{Relevant coursework:}{
-        data science, 
-        predictive modelling, 
-        clustering, 
-        classification, 
-        data analytic, 
-        spatial analysis
-    } 
+        graph data science,
+        spatial analysis,
+        time series forecasting,
+        clustering,
+        classification
+    }
+    % \resumeItem{Technical:}{
+    %     Data Science Python,
+    %     ArcGIS,
+    %     SQL (BigQuery), 
+    %     Deep Learning (PyTorch),
+    %     Tableau,
+    %     Git,
+    %     % \LaTeX.
+    % }
+    % \resumeItem{Relevant coursework:}{
+    %     data science,
+    %     machine learning,
+    %     deep learning,
+    %     forecasting,
+    %     clustering,
+    %     classification,
+    %     data analytic,
+    %     spatial analysis
+    % }
     \resumeItem{Languages:}{
         Bahasa Indonesia (Native), 
         English (CEFR Level C1/IELTS 7.5).
     }
+    % \resumeItem{Summary:}{
+    %     x
+    % }
     \resumeItemListEnd
     
     %-----------PRO EXPERIENCE-----------------
     \vspace{-5pt}
     \section{Professional Experiences}
     % \resumeSubHeadingListStart
-
     \resumeSubheading
     {ESRI Indonesia (GIS Software \& Services)}{Jakarta, Indonesia}
     {Data Scientist}{January 2023 – present}
-    {Esri Indonesia provides GIS solutions and services to various industries in Indonesia, 
-    including local and national government, natural resources, utilities, transportation, telecommunications, and commercial.}
-    % \vspace{-5pt}
-    % \resumeItemListStart
-    % \resumeItem{Banking Industry Solutioning:}{ developed a data processing pipeline capable of handling 193 million records, reducing manual process time by 72\%.}
-    % \resumeItemListEnd
+    {Esri Indonesia provides GIS solutions and services to various industries in 
+    Indonesia, including local and national government, natural resources, utilities, 
+    transportation, telecommunications, and commercial.}
+    \vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{GIS-Based Market Development:}{ collaborated with solution team to 
+    developed a dashboard able to showcase current market presence and potential leads. 
+    Handled the data processing pipeline capable of handling 193 million records, 
+    reducing manual process time by 72\%. Applied a statistical method to classify 
+    $\sim$300 top priority leads out of 4000 prospects
+    }
+    \resumeItem{GIS-Based Market Development:}{ created 2 custom geoprocessing tools to 
+    handle spatio-temporal data processing capable of handling 193 million records.
+    }
+    \resumeItem{Air Quality Index (AQI) Forecasting:}{ developed a deep learning 
+    timeseries forecasting pipeline to forecast the next 48 hours of AQI trends. 
+    Designed 36 experimentation combination and used MLflow and Dagshub to monitor the 
+    result. Best model achieve RMSE of $\sim$7.14
+    }
+    \resumeItemListEnd
     
     \vspace{5pt}
     \resumeSubheading
@@ -161,14 +224,19 @@
     {Jakarta, Indonesia}
     {Business Intelligence Analyst}
     {December 2021 - July 2022}
-    {Zenius is a well-know ed-tech company pioneer focus on increasing thinking capacity and building foundational thinking for junior
-    and senior high school student to help them excel in their school}
+    {Zenius is a well-know ed-tech company pioneer focus on increasing thinking 
+    capacity and building foundational thinking for junior and senior high school 
+    student to help them excel in their school}
     \vspace{-5pt}
     \resumeItemListStart
-    \resumeItem{Workflow management:}{ structured a system to increase workflow transparency and accountability. 
-    Increase the ability to manage and monitor ad hoc and internal tasks/projects from 0 to 16+ tasks/projects weekly.}
-    \resumeItem{Dashboard:}{ created 3 google data studio dashboards for 3 different teams with 
-    over 50 metrics ranged from operational to C-level granularity.}
+    \resumeItem{Workflow management:}{ \textit{structured a system to increase 
+    workflow transparency and accountability}. Increased the ability to manage 
+    and monitor ad hoc and internal tasks/projects \textcolor{blue}{from 0 to 
+    16+ tasks/projects weekly}.}
+    \resumeItem{Dashboard:}{ created \textcolor{blue}{3 dashboards} with 
+    \textcolor{red}{google data studio} for \textcolor{green}{growth, finance, 
+    and content teams} with over \textcolor{blue}{50 metrics} ranged from 
+    operational to C-level granularity.}
     \resumeItemListEnd
 
     \vspace{5pt}
@@ -177,18 +245,23 @@
     {Jakarta, Indonesia}
     {Junior Risk Data Analyst $\Rightarrow$ Risk Data Analyst}
     {April 2019 - December 2021}
-    {GoTo’s ecosystem comprises of on-demand transport, e-commerce, food and grocery delivery, logistics and fulfillment, and financial
-    services through the Gojek, Tokopedia and GoTo Financial platforms.}
+    {GoTo’s ecosystem comprises of on-demand transport, e-commerce, food and grocery 
+    delivery, logistics and fulfillment, and financial services through the Gojek, 
+    Tokopedia and GoTo Financial platforms.}
     \vspace{-5pt}
     \resumeItemListStart
-    \resumeItem{Fraud analysis:}{ analyzed up to 1000 GPS movements daily to determine 
-    fraudulent patterns for constructing fraud rules of fourwheels and two-wheels platforms.}
-    \resumeItem{Rule deployment:}{ prevented new modus operandi from exploiting a GPS related-loophole in the production apps. 
-    Fraudsters abused this loophole for financial gain and reputation hijack. Reduced the number of
-    case significantly from 400 to 10 cases daily, with false positive rate under 1\%.}
-    \resumeItem{Rule enhancement:}{ analyzed the hypothesis made by my team 
-    and enhanced the rule by applying a more sophisticated method of fraud identification (relational graph logic) 
-    to detect the convoluted device connection/relation. Increased the detection rate by 50\%.}
+    \resumeItem{Fraud analysis:}{ \textcolor{blue}{analyzed up to 1000 GPS movements} 
+    \textcolor{yellow}{daily} to determine fraudulent patterns for constructing fraud 
+    rules of fourwheels and two-wheels platforms.}
+    \resumeItem{Rule deployment:}{ prevented new modus operandi from exploiting a GPS 
+    related-loophole in the production apps. Fraudsters abused this loophole for 
+    financial gain and reputation hijack. \textcolor{blue}{Reduced the number of
+    case significantly from 400 to 10 cases daily, with false positive rate under 1\%} 
+    \textcolor{yellow}{within a month}.}
+    \resumeItem{Rule enhancement:}{ \textit{analyzed the hypothesis made fraud my 
+    team then enhanced the rule by applying a more sophisticated method} of fraud 
+    identification (relational graph logic) to detect the convoluted device 
+    connection/relation. \textcolor{blue}{Increased the detection rate by 50\%}.}
     \resumeItemListEnd
 
     % \resumeSubHeadingListEnd
