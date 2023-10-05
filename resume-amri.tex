@@ -9,11 +9,12 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{xcolor}
 
 \usepackage{tikz}
 \usepackage{lipsum}
+\usepackage{multicol}
 
 % Define custom colors
 \definecolor{darkblue}{HTML}{16417C}
@@ -107,7 +108,7 @@
                 \\
                 \textbf{\Large Amri Rasyidi} \\
                 \href{mailto:amri.geodesy@gmail.com}{amri.geodesy@gmail.com} \\ 
-                \href{https://www.linkedin.com/in/amri-rasyidi/}{\fontsize{14}{20}\faLinkedinSquare ~Amri Rasyidi}
+                \href{https://www.linkedin.com/in/amri-rasyidi/}{\fontsize{14}{20}\faLinkedin ~Amri Rasyidi}
                 \href{https://github.com/amrirasyidi}{\fontsize{14}{20}\faGithub ~amrirasyidi}
                 \href{https://arasyidi.netlify.app/}{\fontsize{14}{20}\faGlobe ~arasyidi.netlify.app}
             \end{tabular}
@@ -116,24 +117,30 @@
     
     \vspace{20pt}
     %--------SKILLS------------
-    \section{Skills and Courseworks}
+    \section{Skills and Stack}
     \resumeItemListStart
-    \resumeItem{Technical:}{
-        Python (VSCode, PyCharm), 
-        SQL (BigQuery), 
-        ArcGIS, 
-        Tableau, 
-        Git, 
-        \LaTeX.
+    \resumeItem{Machine Learning, Deep Learning, MLOps:}{ % 8bd274, C8cfd4
+        PyTorch, XGBoost, MLFlow, Optuna
+        % \textcolor[HTML]{8bd274}{, scikit-learn, statsmodel}
+        % \textcolor[HTML]{C8cfd4}{, TensorFlow, Darts, DVC}
+    }
+    \resumeItem{Data Science:}{
+        VSCode, GeoPandas, Apache-Sedona, polars, ydata-profiling, BigQuery SQL,
+        ArcGIS Pro
+        % \textcolor[HTML]{C8cfd4}{, Neo4j, Cypher}, 
+    }
+    \resumeItem{Deployment:}{
+        Git, GitHub, DagsHub
+        % \textcolor[HTML]{8bd274}{, Gradio},
+        % \textcolor[HTML]{C8cfd4}{, HuggingFace, Azure, AWS}
     }
     \resumeItem{Relevant coursework:}{
-        data science, 
-        predictive modelling, 
-        clustering, 
-        classification, 
-        data analytic, 
-        spatial analysis
-    } 
+        spatial analysis,
+        clustering,
+        classification,
+        time series forecasting,
+        graph data science
+    }
     \resumeItem{Languages:}{
         Bahasa Indonesia (Native), 
         English (CEFR Level C1/IELTS 7.5).
@@ -144,16 +151,27 @@
     \vspace{-5pt}
     \section{Professional Experiences}
     % \resumeSubHeadingListStart
-
     \resumeSubheading
     {ESRI Indonesia (GIS Software \& Services)}{Jakarta, Indonesia}
     {Data Scientist}{January 2023 – present}
-    {Esri Indonesia provides GIS solutions and services to various industries in Indonesia, 
-    including local and national government, natural resources, utilities, transportation, telecommunications, and commercial.}
-    % \vspace{-5pt}
-    % \resumeItemListStart
-    % \resumeItem{Banking Industry Solutioning:}{ developed a data processing pipeline capable of handling 193 million records, reducing manual process time by 72\%.}
-    % \resumeItemListEnd
+    {Esri Indonesia provides GIS solutions and services to various industries in 
+    Indonesia, including local and national government, natural resources, utilities, 
+    transportation, telecommunications, and commercial.}
+    \vspace{-5pt}
+    \resumeItemListStart
+    \resumeItem{GIS-Based Market Development:}{ collaborated with solution team to
+    developed a dashboard able to showcase current market presence and potential leads.
+    Handled the data processing pipeline capable of handling 193 million records,
+    reducing manual process time by 72\%. Applied a statistical method to classify
+    $\sim$300 top priority leads out of 4000 prospects
+    }
+    \resumeItem{Air Quality Index (AQI) Forecasting:}{ developed and compared novel
+    timeseries forecasting methods pipeline to forecast the next 48 hours of AQI trends.
+    Designed and automated experimentation process using Optuna resulted in
+    $>$80 experiment combinations and used MLflow and Dagshub to monitor the result.
+    Best model achieve RMSE of $\sim$7.14 with data ranged from 40-160.
+    }
+    \resumeItemListEnd
     
     \vspace{5pt}
     \resumeSubheading
@@ -161,14 +179,18 @@
     {Jakarta, Indonesia}
     {Business Intelligence Analyst}
     {December 2021 - July 2022}
-    {Zenius is a well-know ed-tech company pioneer focus on increasing thinking capacity and building foundational thinking for junior
-    and senior high school student to help them excel in their school}
+    {Zenius is a well-know ed-tech company pioneer focus on increasing thinking 
+    capacity and building foundational thinking for junior and senior high school 
+    student to help them excel in their school}
     \vspace{-5pt}
     \resumeItemListStart
-    \resumeItem{Workflow management:}{ structured a system to increase workflow transparency and accountability. 
-    Increase the ability to manage and monitor ad hoc and internal tasks/projects from 0 to 16+ tasks/projects weekly.}
-    \resumeItem{Dashboard:}{ created 3 google data studio dashboards for 3 different teams with 
-    over 50 metrics ranged from operational to C-level granularity.}
+    \resumeItem{Workflow management:}{ structured a system to increase 
+    workflow transparency and accountability. Increased the ability to manage 
+    and monitor ad hoc and internal tasks/projects from 0 to 
+    16+ tasks/projects weekly.}
+    \resumeItem{Dashboard:}{ created 3 dashboards with google data studio for growth,
+    finance, and content teams with over 50 metrics ranged from operational to
+    C-level granularity.}
     \resumeItemListEnd
 
     \vspace{5pt}
@@ -177,18 +199,23 @@
     {Jakarta, Indonesia}
     {Junior Risk Data Analyst $\Rightarrow$ Risk Data Analyst}
     {April 2019 - December 2021}
-    {GoTo’s ecosystem comprises of on-demand transport, e-commerce, food and grocery delivery, logistics and fulfillment, and financial
-    services through the Gojek, Tokopedia and GoTo Financial platforms.}
+    {GoTo’s ecosystem comprises of on-demand transport, e-commerce, food and grocery 
+    delivery, logistics and fulfillment, and financial services through the Gojek, 
+    Tokopedia and GoTo Financial platforms.}
     \vspace{-5pt}
     \resumeItemListStart
-    \resumeItem{Fraud analysis:}{ analyzed up to 1000 GPS movements daily to determine 
-    fraudulent patterns for constructing fraud rules of fourwheels and two-wheels platforms.}
-    \resumeItem{Rule deployment:}{ prevented new modus operandi from exploiting a GPS related-loophole in the production apps. 
-    Fraudsters abused this loophole for financial gain and reputation hijack. Reduced the number of
-    case significantly from 400 to 10 cases daily, with false positive rate under 1\%.}
-    \resumeItem{Rule enhancement:}{ analyzed the hypothesis made by my team 
-    and enhanced the rule by applying a more sophisticated method of fraud identification (relational graph logic) 
-    to detect the convoluted device connection/relation. Increased the detection rate by 50\%.}
+    \resumeItem{Fraud analysis:}{ analyzed up to 1000 GPS movements
+    daily to determine fraudulent patterns for constructing fraud 
+    rules of fourwheels and two-wheels platforms.}
+    \resumeItem{Rule deployment:}{ prevented new modus operandi from exploiting a GPS 
+    related-loophole in the production apps. Fraudsters abused this loophole for 
+    financial gain and reputation hijack. Reduced the number of
+    case significantly from 400 to 10 cases daily, with false positive rate under 1\%
+    within a month.}
+    \resumeItem{Rule enhancement:}{ analyzed the hypothesis made fraud my 
+    team then enhanced the rule by applying a more sophisticated method of fraud 
+    identification (relational graph logic) to detect the convoluted device 
+    connection/relation. Increased the detection rate by 50\%.}
     \resumeItemListEnd
 
     % \resumeSubHeadingListEnd
@@ -198,15 +225,18 @@
     \section{Projects}
 
     \resumeItemListStart
-    \resumeItem{Book Recommendation System:}{ built a local web app to give user a book recommendation based on collaborative filtering logic.
-    Also created a simple search engine to ensure users are asking the correct book to be recommended. 
-    \href{https://github.com/amrirasyidi/book_recommendation}{[\textcolor{blue}{repository}]}}
-    \resumeItem{MIT IDSS Course - Hackaton:}{ the objective of this problem is to understand which parameters play an important role in swaying
-    passenger feedback towards a positive scale. Created logistic regression, XGBoost, and Deep learning model resulting in accuracy
-    above 92\%. 
-    \href{https://github.com/amrirasyidi/mit_idss_hackaton}{[\textcolor{blue}{repository}]}}
-    \resumeItem{JDVF - Tableau Dashboard:}{ this dashboard provides the government, NGO, and researcher among many other stakeholders a start
-    to make data-driven decisions and policy-making regarding flood mitigation in West Java. 
+    \resumeItem{Book Recommendation System:}{ built a local web app to give user a book
+    recommendation based on collaborative filtering logic. Also created a simple search
+    engine to ensure users are asking the correct book to be recommended.
+    \href{https://github.com/amrirasyidi/book_recommendation}\faGithub}
+    \resumeItem{MIT IDSS Course - Hackaton:}{ the objective of this problem is to
+    understand which parameters play an important role in swaying passenger feedback
+    towards a positive scale. Created logistic regression, XGBoost, and Deep learning
+    model resulting in accuracy above 92\%. 
+    \href{https://github.com/amrirasyidi/mit_idss_hackaton}\faGithub}
+    \resumeItem{JDVF - Tableau Dashboard:}{ this dashboard provides the government, NGO,
+    and researcher among many other stakeholders a start to make data-driven decisions
+    and policy-making regarding flood mitigation in West Java. 
     \href{https://public.tableau.com/app/profile/faisal.putra/viz/Book1_16671939458310/DashboardFINAL}{[\textcolor{blue}{Tableau Public}]}}
     \resumeItemListEnd
     
@@ -220,7 +250,8 @@
     {An online professional course taught by the MIT faculty}
     {August - November 2022}
     {Topic covered: statistics, unsupervised and supervised learning, hypothesis testing, 
-    deep learning, recommendation system, network and graphical model, and predictive analysis.}
+    deep learning, recommendation system, network and graphical model, and predictive 
+    analysis.}
     
     \vspace{5pt}
     \resumeSubheading
@@ -240,14 +271,17 @@
     {Jakarta, Indonesia}
     {Mentor/Instructor - Generasi Gigih}
     {July - December 2021}
-    {Yayasan Anak Bangsa Bisa (YABB) is a non-profit organization founded by Gojek, a catalyst that enables resilient change makers to
-    solve pressing challenges and build sustainable communities. Generasi Gigih programme focuses on generating tech-talent by
-    conducting intensive bootcamp to prepare fresh graduates for the tech industry.}
+    {Yayasan Anak Bangsa Bisa (YABB) is a non-profit organization founded by Gojek, a
+    catalyst that enables resilient change makers to solve pressing challenges and build
+    sustainable communities. Generasi Gigih programme focuses on generating tech-talent
+    by conducting intensive bootcamp to prepare fresh graduates for the tech industry.}
     \vspace{-5pt}
     \resumeItemListStart
-    \resumeItem{Designed and created:}{ data analysis lecture materials (Python and SQL for data analysis).}
+    \resumeItem{Designed and created:}{ data analysis lecture materials (Python and SQL
+    for data analysis).}
     \resumeItem{Gave Lecture:}{ on data analysis.}
-    \resumeItem{Mentorship:}{ guide and mentor to the participants during their internship. Ensured the participants gained the most during their
+    \resumeItem{Mentorship:}{ guide and mentor to the participants during their
+    internship. Ensured the participants gained the most during their
     internship while maintaining the focus of the projects they were working.}
     \resumeItemListEnd
 
@@ -260,19 +294,11 @@
     {Ikatan Mahasiswa Geodesi ITB (IMG-ITB) is a profession-based student association.}
     \vspace{-5pt}
     \resumeItemListStart
-    \resumeItem{Visioning:}{ designed a blueprint as the north star metrics of the association. Mainly focus on character and mindset development in a
+    \resumeItem{Visioning:}{ designed a blueprint as the north star metrics of the
+    association. Mainly focus on character and mindset development in a
     professional manner and making concrete social impact.}
-    \resumeItem{Executive function:}{ managed a council consisted of 5 ministries and 15 departments to maintain and develop the student association.}
-    \resumeItemListEnd
-
-    %-----------MISCELLANEOUS-----------------
-    \vspace{-5pt}
-    \section{Miscellaneous}
-
-    \resumeItemListStart
-    \resumeItem{Topic:}{ education, environment, game industry, movie, leisure.}
-    \resumeItem{Book:}{ history, sociology, biography, religion, psychology.}
-    \resumeItem{Activity:}{ SCUBA diving, hiking, gym, PC game, writing.}
+    \resumeItem{Executive function:}{ managed a council consisted of 5 ministries and 15
+    departments to maintain and develop the student association.}
     \resumeItemListEnd
 
 \end{document}
