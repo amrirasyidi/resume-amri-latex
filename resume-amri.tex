@@ -95,7 +95,7 @@
     \begin{tikzpicture}[remember picture,overlay]
 
         \coordinate [below=80pt] (midpoint) at (current page.north);
-        
+
         \node [
         name = colourbar,
         anchor = south,
@@ -114,25 +114,20 @@
             \end{tabular}
         };
     \end{tikzpicture}
-    
+
     \vspace{20pt}
     %--------SKILLS------------
     \section{Skills and Stack}
     \resumeItemListStart
-    \resumeItem{Machine Learning, Deep Learning, MLOps:}{ % 8bd274, C8cfd4
-        PyTorch, YOLO, XGBoost, MLFlow, Optuna
-        % \textcolor[HTML]{8bd274}{, scikit-learn, statsmodel}
-        % \textcolor[HTML]{C8cfd4}{, TensorFlow, Darts, DVC}
+    \resumeItem{Machine Learning, Deep Learning, MLOps:}{
+        PyTorch, YOLOv8, XGBoost, MLFlow, Optuna, DVC
     }
     \resumeItem{Data Science:}{
         VSCode, GeoPandas, Apache-Sedona, polars, ydata-profiling,
         duckdb, BigQuery SQL, ArcGIS Pro
-        % \textcolor[HTML]{C8cfd4}{, Neo4j, Cypher}, 
     }
     \resumeItem{Deployment:}{
-        Git, GitHub, DagsHub
-        % \textcolor[HTML]{8bd274}{, Gradio},
-        % \textcolor[HTML]{C8cfd4}{, HuggingFace, Azure, AWS}
+        Git, GitHub, lazygit, DagsHub
     }
     \resumeItem{Relevant coursework:}{
         computer vision (image classification, object detection),
@@ -140,18 +135,16 @@
         time series forecasting,
         clustering,
         classification
-        % graph data science,
     }
     \resumeItem{Languages:}{
         Bahasa Indonesia (Native), 
         English (CEFR Level C1/IELTS 7.5).
     }
     \resumeItemListEnd
-    
+	
     %-----------PRO EXPERIENCE-----------------
     \vspace{-5pt}
     \section{Professional Experience}
-    % \resumeSubHeadingListStart
     \resumeSubheading
     {ESRI Indonesia (GIS Software \& Services)}{Jakarta, Indonesia}
     {Data Scientist}{January 2023 – present}
@@ -160,11 +153,11 @@
     transportation, telecommunications, and commercial.}
     \vspace{-5pt}
     \resumeItemListStart
-    \resumeItem{GIS-Based Market Development:}{ collaborated with solution team to
-    developed a dashboard able to showcase current market presence and potential leads.
-    Handled the data processing pipeline capable of handling 193 million records,
-    reducing manual process time by 72\%. Applied a statistical method to classify
-    $\sim$300 top priority leads out of 4000 prospects.
+    \resumeItem{GIS-Based Market Development:}{ collaborated with solution team to 
+    developed a dashboard able to showcase current market presence and potential leads. 
+    Created custom data processing pipeline capable of handling 193 million records, 
+    reducing manual process time by 72\%. Applied a statistical method to classify 
+    $\sim$300 top priority leads out of 4000 prospects
     }
     \resumeItem{PM2.5 Forecasting:}{ developed a deep learning 
     timeseries forecasting pipeline to forecast the next 48 hours of PM2.5 trends. 
@@ -172,7 +165,7 @@
     result. Best model achieve RMSE of $\sim$7.14.
     }
     \resumeItemListEnd
-    
+
     \vspace{5pt}
     \resumeSubheading
     {Zenius Education (Ed-Tech)}
@@ -218,8 +211,6 @@
     connection/relation. Increased the detection rate by 50\%.}
     \resumeItemListEnd
 
-    % \resumeSubHeadingListEnd
-
     %-----------PROJECT-----------------
     \vspace{-5pt}
     \section{Project}
@@ -239,7 +230,7 @@
     and policy-making regarding flood mitigation in West Java. 
     \href{https://public.tableau.com/app/profile/faisal.putra/viz/Book1_16671939458310/DashboardFINAL}{[\textcolor{blue}{Tableau Public}]}}
     \resumeItemListEnd
-    
+
     %-----------Educations-----------------
     \vspace{-5pt}
     \section{Education}
