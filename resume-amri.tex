@@ -16,6 +16,9 @@
 \usepackage{lipsum}
 \usepackage{multicol}
 
+% dependencies
+\input{info.tex}
+
 % Define custom colors
 \definecolor{darkblue}{HTML}{16417C}
 \definecolor{lightblue}{HTML}{46A9F7}
@@ -107,53 +110,24 @@
             \begin{tabular}{c}
                 \\
                 \\
-                \textbf{\Large Amri Rasyidi} \\
-                \href{mailto:amri.geodesy@gmail.com}{amri.geodesy@gmail.com} \\ 
-                \href{https://www.linkedin.com/in/amri-rasyidi/}{\fontsize{14}{20}\faLinkedin ~Amri Rasyidi}
-                \href{https://github.com/amrirasyidi}{\fontsize{14}{20}\faGithub ~amrirasyidi}
-                \href{https://arasyidi.netlify.app/}{\fontsize{14}{20}\faGlobe ~arasyidi.netlify.app}
+                \textbf{\Large \myname} \\
+                \href{mailto:\myemail} {\myemail} \\ 
+                \href{\mylinkedin}{\fontsize{14}{20}\faLinkedin ~\myname}
+                \href{\mygh}{\fontsize{14}{20}\faGithub ~amrirasyidi}
+                \href{\myweb}{\fontsize{14}{20}\faGlobe ~arasyidi.netlify.app}
             \end{tabular}
         };
     \end{tikzpicture}
 
     \vspace{20pt}
     \section{Summary} % todo: remove
-    {Bachelor of Science in Geodesy and Geomatics Engineering with a strong passion for 
-    spatial science and data science. With over 5 years of experience in the data industry, 
-    including 2 years dedicated to data science. Shows Commitment to continuous learning and 
-    growth, by maintaining a blog documenting my data science journey and insights into 
-    life. Possess leadership experience and actively volunteer to teach data science to 
-    others, demonstrating a commitment to knowledge sharing and community engagement.}
+    \input{sections/summary.tex}
     \vspace{-10pt}
+    
     %--------SKILLS------------
     \section{Skills and Stack}
     \resumeItemListStart
-    \resumeItem{Machine Learning, Deep Learning, MLOps:}{
-        PyTorch, YOLO, XGBoost, MLFlow, Optuna, DVC
-        \textcolor[HTML]{8bd274}{, scikit-learn, statsmodel} % secondary 8bd274 % todo: remove
-        \textcolor[HTML]{C8cfd4}{, TensorFlow, Darts} % to be achieved C8cfd4 % todo: remove
-    }
-    \resumeItem{Data Science:}{
-        VSCode, GeoPandas, Apache-Sedona, polars, ydata-profiling, duckdb, BigQuery SQL, ArcGIS Pro
-        \textcolor[HTML]{C8cfd4}{, Neo4j, Cypher} % todo: remove
-    }
-    \resumeItem{Deployment:}{
-        Git, GitHub, lazygit, DagsHub
-        \textcolor[HTML]{8bd274}{, Gradio} % todo: remove
-        \textcolor[HTML]{C8cfd4}{, HuggingFace, Azure, AWS} % todo: remove
-    }
-    \resumeItem{Relevant coursework:}{
-        computer vision (image classification, object detection),
-        spatial analysis,
-        time series forecasting,
-        clustering,
-        classification
-        % graph data science,
-    }
-    \resumeItem{Languages:}{
-        Bahasa Indonesia (Native), 
-        English (CEFR Level C1/IELTS 7.5).
-    }
+    \input{sections/skills.tex}
     \resumeItemListEnd
 	
     %-----------PRO EXPERIENCE-----------------
